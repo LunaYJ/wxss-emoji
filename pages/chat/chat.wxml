@@ -1,0 +1,16 @@
+<import src="../../template/tpl.wxml" />
+
+<!--<view>{{msgArr}}</view>-->
+<template is="imgTplBak" data="{{emojiMsg}}"></template>
+<view class="chatArea">
+  <view bindtap="focusIpt">
+    <template is="imgTplBak" data="{{emojiMsg:iptMsgTrans}}"></template>
+
+    
+    <image hidden="{{noFocus ? true : false}}" src="../../images/14.png" style="width:20rpx; height:20rpx;"></image>
+  </view>
+  <button type="default" bindtap="sendMsg">发送</button>
+  <input type="text" bindconfirm="focusOut" value="{{iptMsg}}" bindblur="focusOut" bindinput="syncIpt" class="iptHidden" focus="{{iptFocus}}" />
+</view>
+<view>
+</view>

@@ -1,0 +1,61 @@
+
+.send-chat input {
+    border: 1px solid #000;
+}
+input {
+    border: 1px solid #000;
+}
+button {
+}
+textarea {
+    border: 1px solid #000;
+}
+.iptHidden {
+    /*display: none;*/
+
+}
+.chatArea {
+    position: relative;
+
+}
+.chatArea .iptHidden {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    /*opacity: 0;*/
+    /*color: transparent;*/
+    padding-left: 100px;
+}
+.chatArea>view {
+    border: 1px solid #000;
+    max-height: 220rpx;
+    overflow-y: scroll;
+    min-height: 48rpx;
+}
+.chatArea .emojiTpl {
+    display: inline;
+}
+.chatArea view image {
+    -webkit-animation: flash 1s linear 0  infinite  normal;
+    -moz-animation: flash 1s linear 0  infinite  normal;
+    animation: flash 1s linear 0  infinite  normal;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
